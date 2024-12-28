@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Learning Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Javascript Example Website</h1>
+  </header>
+
+  <main>
+    <section class="demo-section">
+      <h2>Interactive Examples</h2>
+      <div class="interactive-container">
+
+
+        <div class="example-box">
+          <h3>Counter Demo</h3>
+          <div class="counter">
+            <span id="counterValue">0</span>
+            <button id="incrementBtn" class="demo-button">Increment</button>
+            <button id="decrementBtn" class="demo-button">Decrement</button>
+          </div>
+        </div>
+
+        <div class="example-box">
+          <h3>Text Manipulator</h3>
+          <input type="text" id="textInput" placeholder="Type something...">
+          <button id="upperCaseBtn" class="demo-button">Convert to Uppercase</button>
+          <p id="textOutput"></p>
+        </div>
+      </div>
+      <div class="example-box">
+        <h3>Color Changer</h3>
+        <button id="colorButton" class="demo-button">Change Background Color</button><br><br>
+      </div>
+    </section>
+
+    <section class="code-section">
+      <h2>Live Code Examples</h2>
+      <div class="code-container">
+        <pre><code id="codeDisplay"><p>
+          // Example JavaScript Code
+            function changeColor() {
+              const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4'];
+              const random = Math.floor(Math.random() * colors.length);
+              document.body.style.background = colors[random];
+            }
+          </p></code></pre>
+      </div>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
